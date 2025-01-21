@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "clean-code"
+version = "0.1.0"
+description = "Code examples for the Accenture clean python workshop"
+authors = ["georg.aschl <georg.aschl@accenture.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+scikit-learn = "^1.6.1"
+pandas = "^2.2.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
