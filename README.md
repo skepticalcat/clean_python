@@ -23,7 +23,7 @@ pandas = "^2.2.3"
 
 ### Setting Up the Environment
 
-> **Note:** You do not _need_ to activate a Poetry environment for this workshop. All code will run using your system's Python environment or the global Poetry-managed environment, as long as the dependencies are installed.
+> **Note:** While it is recommended, you do not _need_ to activate a Poetry environment for this workshop. All code will run using your system's Python environment or the global Poetry-managed environment, as long as the dependencies are installed.
 
 
 1. Install Python (ensure it is version 3.12 or higher).
@@ -44,7 +44,7 @@ pandas = "^2.2.3"
 
 **I recommend making sure that you can debug (i.e. step through) the code examples, it will help a lot if you're able to inspect variables**
 
-## Session 1: Structure and Style
+## Session 1: Names, Comments, and Functions
 
 In the first session, you'll work on improving Python code by focusing on naming conventions, comments, and functions. The session aims to:
 
