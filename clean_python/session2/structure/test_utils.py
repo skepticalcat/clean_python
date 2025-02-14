@@ -1,7 +1,6 @@
 import pytest
 
-from session2.structure._solution.src.utils.utils import get_markdown_from_raw_html, split_text_to_word_list, \
-    remove_control_chars
+from clean_python.session2.structure.utils import get_markdown_from_raw_html, split_text_to_word_list, remove_control_chars
 
 
 def test_get_markdown_from_raw_html():

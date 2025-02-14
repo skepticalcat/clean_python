@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "clean-code"
+name = "clean_python"
 version = "0.1.0"
 description = "Code examples for the Accenture clean python workshop"
 authors = ["georg.aschl <georg.aschl@accenture.com>"]

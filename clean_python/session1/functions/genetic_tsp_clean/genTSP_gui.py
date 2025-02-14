@@ -2,7 +2,7 @@ import queue
 import threading
 import tkinter as tk
 
-from session1.functions.genetic_tsp_dirty.genTSP import GeneticTSPSolver, TspData
+from clean_python.session1.functions.genetic_tsp_clean.genTSP import GeneticTSPSolver, TspData
 
 def plot_point(canvas, width, height, x, y):
     canvas_x = width // 2 + x
@@ -56,8 +56,8 @@ right_canvas.pack(side="right")
 tsp_data = TspData(plane_width, 50)
 genetic_tsp_solver = GeneticTSPSolver(tsp_data)
 
-update_plane_left(tsp_data.cities_coords, genetic_tsp_solver.string_them_up(tsp_data.cities_indices))
-update_plane_right(tsp_data.cities_coords, genetic_tsp_solver.string_them_up(tsp_data.cities_indices))
+update_plane_left(tsp_data.cities_coords, genetic_tsp_solver.create_edges_between_cities_of_travel_itinerary(tsp_data.cities_indices))
+update_plane_right(tsp_data.cities_coords, genetic_tsp_solver.create_edges_between_cities_of_travel_itinerary(tsp_data.cities_indices))
 
 
 pipe = queue.Queue()
@@ -65,7 +65,6 @@ pipe = queue.Queue()
 
 def background_worker(pipe):
     genetic_tsp_solver.run(pipe)
-
 
 threading.Thread(target=background_worker, args=(pipe,), daemon=True).start()
 
