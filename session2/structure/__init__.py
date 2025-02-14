@@ -1,0 +1,1 @@
+from session2.structure.config import WIKIPEDIA_URL

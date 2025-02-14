@@ -1,0 +1,1 @@
+WIKIPEDIA_URL = "https://no.wikipedia.org/wiki/Forside"
