@@ -3,7 +3,7 @@ from scipy.constants import c
 
 class Vehicle:
     def __init__(self):
-        self.max_speed = c
+        self.max_speed_ms = c
 
     def move(self):
         pass
