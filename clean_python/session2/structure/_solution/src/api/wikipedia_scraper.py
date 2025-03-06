@@ -1,7 +1,7 @@
 import requests
 import re
 
-from clean_python.session2.structure import WIKIPEDIA_URL
+from clean_python.session2.structure._solution.configs.config import WIKIPEDIA_URL
 
 
 def get_url_of_wiki_article_of_the_day() -> str:
